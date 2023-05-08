@@ -10,7 +10,7 @@ Running the code only requires an elementary knowledge of Python. But to experim
 
 # Usage
  
-The IEEE 2014 PHM Challenge dataset files for the PEMFC stack operated with and without current ripples are provided with this repo in the folders "FC1_Without_Ripples" and "Full_FC2_With_Ripples" within IEEE 2014, respectively. To test/implement the deep learning models in Google Colab:
+The IEEE 2014 PHM Challenge dataset files for the PEMFC stack operated with and without current ripples are provided with this repo in the folders "FC1_Without_Ripples" and "Full_FC2_With_Ripples" within the **IEEE2014DataChallengeData** folder, respectively. To test/implement the deep learning models in Google Colab:
 
 1. Open the **PEMFC_Prognostics.ipynb** file in Github and click **Open in Colab**.
 2. Connect to a Colab runtime, preferably a GPU one as model training and optimization are compute-intensive. 
