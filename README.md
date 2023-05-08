@@ -12,9 +12,9 @@ Running the code only requires an elementary knowledge of Python. But to experim
  
 The IEEE 2014 PHM Challenge dataset files for the PEMFC stack operated with and without current ripples are provided with this repo in the folders "FC1_Without_Ripples" and "Full_FC2_With_Ripples" within the **IEEE2014DataChallengeData** folder, respectively. To test/implement the deep learning models in Google Colab:
 
-1. Open the **PEMFC_Prognostics.ipynb** file in Github and click **Open in Colab**.
+1. Open the **PEMFC_Prognostics_DL.ipynb** file in Github and click **Open in Colab**.
 2. Connect to a Colab runtime, preferably a GPU one as model training and optimization are compute-intensive. 
-3. Add the dataset files to a Google Colaboratory runtime. There are two ways to do this: 
+3. Add the dataset files to the runtime. There are two ways to do this: 
     1. Add the dataset files to your Google Drive. The code assumes that you add the dataset files in the topmost Google Drive directory. If the datasets are at a different path, modify the path in `pd.read_csv()` in the **IEEE PHM 2014 Data Challenge** code cells.
     **OR**
     2. Create a shortcut to [this Drive link](https://drive.google.com/drive/folders/19MgM4AyMeHZGXDILrIF8HT9K8Ki1vjDz?usp=sharing) in Google Drive. To do so, click the down arrow near the folder name following **Shared with me** and click **Add Shortcut to Drive**.
@@ -26,5 +26,6 @@ The IEEE 2014 PHM Challenge dataset files for the PEMFC stack operated with and 
     1. You can change the network optimizer hyperparameters for RMSprop/Adam/SGD Optimizers in the `create_optimizer` function definition.
     2. You can select the model to optimize and define the hyperparameter search spaces for the number of convolutional filters, dropout, number of neurons in each hidden layer, and activation function in the `objective_function` function definition.
     3. You can choose how many optimization trials you want to run by changing `n_trials` in the `optimize_study` function definition. You can also select hyperparameter optimizers other than tree-structured Parzen estimators (TPE) and pruners other than Hyperband within `optimize_study`.
+
 
 For any questions, you can reach out to me at kartik.sharma1004@gmail.com or kartik.sahajpal.ug20@nsut.ac.in.
