@@ -27,4 +27,4 @@ The IEEE 2014 PHM Challenge dataset files for the PEMFC stack operated with and 
     2. You can select the model to optimize and define the hyperparameter search spaces for the number of convolutional filters, dropout, number of neurons in each hidden layer, and activation function in the `objective_function` function definition.
     3. You can choose how many optimization trials you want to run by changing `n_trials` in the `optimize_study` function definition. You can also select hyperparameter optimizers other than tree-structured Parzen estimators (TPE) and pruners other than Hyperband within `optimize_study`.
 
-For any questions, you can reach out to me at my email address on my GitHub profile.
+For any questions, you can reach out to me at (kartik.sharma1004@gmail.com)[mailto:kartik.sharma1004@gmail.com] or (kartik.sahajpal.ug20@nsut.ac.in)[mailto:kartik.sahajpal.ug20@nsut.ac.in].
